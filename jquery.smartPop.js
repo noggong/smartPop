@@ -56,7 +56,7 @@
  * 
  * 
  * @name $.smartPop
- * @author Pharos @inidu2
+ * @author innocia @inidu2
  */
     
 ;(function($) {
