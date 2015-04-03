@@ -75,6 +75,7 @@
             $('html').css({ marginRight: '15px', display: 'block', overflow: 'hidden', overflowY: 'hidden' });
             $('#smartPop').show();
             if(this.opts.log) $('#smartPop_log').show();
+            return this;
         },
         resize : function() {
             this.log(this.opts.width + ' x ' + this.opts.height);
