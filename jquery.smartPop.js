@@ -50,7 +50,8 @@
     height      : 500,
     html        : '',
     url         : '',
-    log         : false
+    log         : false,
+	margin      : '0 0 0 0' //창이 무조건 가운데가 아닌 위치를 조절 할수 있음
  * };
  * 
  * 
@@ -125,7 +126,7 @@
             if(this.isInstall == false) {
                 var body                    = $('body');
                 var smartPop_overlay        = $('<div />').attr('id', 'smartPop_overlay').css({ opacity: this.opts.opacity, background: this.opts.background });
-                var smartPop                = $('<div />').attr('id', 'smartPop');
+                var smartPop                = $('<div />').attr('id', 'smartPop').css({margin: this.opts.margin});;
                 var smartPop_container      = $('<div />').attr('id', 'smartPop_container');
                 var smartPop_close_wrap     = $('<div />').attr('id', 'smartPop_close_wrap');
                 var smartPop_close          = $('<div />').attr('id', 'smartPop_close');
@@ -199,6 +200,7 @@
         height      : 500,
         html        : '',
         url         : '',
-        log         : false
+        log         : false,
+		margin      : '0 0 0 0'
     };
 })(jQuery);
